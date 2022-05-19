@@ -1,0 +1,10 @@
+#! /usr/bin/env zsh
+# Ubicacion del script /home/usuario/.local/bin/scripts
+# Scripts para solucionar error de EACCES
+#
+
+mkdir ~/.npm-global
+npm config set prefix '~/.npm-global'
+echo "export PATH=~/.npm-global/bin:$PATH" >> ~/.profile
+source ~/.profile
+
